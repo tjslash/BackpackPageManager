@@ -21,6 +21,12 @@ Composer:
 composer require tjslash/backpack-page-manager
 ```
 
+Put link for administration sidebar:
+
+``` bash
+php artisan backpack:add-sidebar-content "<li class='nav-item'><a class='nav-link' href='{{ backpack_url('page') }}'><i class='nav-icon la la-question'></i> {{ __('tjslash::backpack-page-manager.pages') }}</a></li>"
+```
+
 Put web route for show a pages:
 
 ``` php

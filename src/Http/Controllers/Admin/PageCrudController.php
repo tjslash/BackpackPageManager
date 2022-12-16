@@ -73,12 +73,12 @@ class PageCrudController extends CrudController
             }
         ]);
 
-        if (count(config('tj.backpack-page-manager.views'))) {
+        if (count(config('tjslash.backpack-page-manager.views'))) {
             CRUD::addColumn([
                 'name' => 'view',
                 'label' => trans('tjslash::backpack-page-manager.template'),
                 'type' => 'select_from_array',
-                'options' => config('tj.backpack-page-manager.views')
+                'options' => config('tjslash.backpack-page-manager.views')
             ]);
         }
 
@@ -120,13 +120,13 @@ class PageCrudController extends CrudController
             fn($value) => CRUD::addClause('where', 'slug', 'LIKE', "%$value%")
         );
 
-        if (count(config('tj.backpack-page-manager.views'))) {
+        if (count(config('tjslash.backpack-page-manager.views'))) {
             CRUD::addFilter([
                     'name' => 'view',
                     'type' => 'dropdown',
                     'label'=> trans('tjslash::backpack-page-manager.template')
                 ],
-                config('tj.backpack-page-manager.views'), 
+                config('tjslash.backpack-page-manager.views'), 
                 fn($value) => CRUD::addClause('where', 'view', $value)
             );
         }
@@ -164,12 +164,12 @@ class PageCrudController extends CrudController
             'tab' => trans('tjslash::backpack-page-manager.common_settings')
         ]);
 
-        if (count(config('tj.backpack-page-manager.views'))) {
+        if (count(config('tjslash.backpack-page-manager.views'))) {
             CRUD::addField([
                 'name' => 'view',
                 'label' => trans('tjslash::backpack-page-manager.template'),
                 'type' => 'select_from_array',
-                'options' => config('tj.backpack-page-manager.views'),
+                'options' => config('tjslash.backpack-page-manager.views'),
                 'allows_null' => true,
                 'default' => null,
                 'tab' => trans('tjslash::backpack-page-manager.common_settings')
