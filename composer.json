@@ -1,0 +1,45 @@
+{
+    "name": "tjslash/backpack-page-manager",
+    "description": "Backpack Page CRUD",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artem Vakylenko",
+            "email": "vakylenkox@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/tjslash/backpack-page-manager",
+    "keywords": [
+        "Laravel"
+    ],
+    "require": {
+        "illuminate/support": "~8|~9",
+        "cviebrock/eloquent-sluggable": "^9.0",
+        "backpack/permissionmanager": "^6.0",
+        "backpack/crud": "^5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tjslash\\BackpackPageManager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tjslash\\BackpackPageManager\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --testdox"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tjslash\\BackpackPageManager\\AddonServiceProvider"
+            ]
+        }
+    }
+}
