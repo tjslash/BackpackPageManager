@@ -1,6 +1,6 @@
 {
-    "name": "tjslash/backpack-page-manager",
-    "description": "Backpack Page CRUD",
+    "name": "tjslash/cto-page-manager",
+    "description": "Cto Page CRUD",
     "license": "MIT",
     "authors": [
         {
@@ -8,7 +8,7 @@
             "email": "vakylenkox@gmail.com"
         }
     ],
-    "homepage": "https://github.com/tjslash/backpack-page-manager",
+    "homepage": "https://github.com/tjslash/cto-page-manager",
     "keywords": [
         "Laravel"
     ],
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Tjslash\\BackpackPageManager\\": "src/"
+            "Tjslash\\CtoPageManager\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tjslash\\BackpackPageManager\\Tests\\": "tests"
+            "Tjslash\\CtoPageManager\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -38,7 +38,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Tjslash\\BackpackPageManager\\AddonServiceProvider"
+                "Tjslash\\CtoPageManager\\AddonServiceProvider"
             ]
         }
     }

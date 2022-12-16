@@ -1,6 +1,6 @@
 <?php
 
-namespace Tjslash\BackpackPageManager\Models;
+namespace Tjslash\CtoPageManager\Models;
 
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Cviebrock\EloquentSluggable\Sluggable;

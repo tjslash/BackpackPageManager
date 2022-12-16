@@ -1,6 +1,6 @@
 <?php
 
-namespace Tjslash\BackpackPageManager\Http\Requests;
+namespace Tjslash\CtoPageManager\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -24,7 +24,7 @@ class PageRequest extends FormRequest
      */
     public function rules()
     {
-        $views = collect(config('tjslash.backpack-page-manager.views'))->keys()->join(',');
+        $views = collect(config('tjslash.cto-page-manager.views'))->keys()->join(',');
         return [
             'title' => 'required|string|max:255',
             'slug' => 'nullable|string|max:255',

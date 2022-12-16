@@ -1,6 +1,6 @@
 <?php
 
-namespace Tjslash\BackpackPageManager;
+namespace Tjslash\CtoPageManager;
 
 use Backpack\CRUD\ViewNamespaces;
 

@@ -1,4 +1,4 @@
-# Backpack CRUD Page Manager
+# Cto CRUD Page Manager
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
@@ -18,19 +18,19 @@ This package Page CRUD Manager functionality for projects that use the [Backpack
 Composer:
 
 ``` bash
-composer require tjslash/backpack-page-manager
+composer require tjslash/cto-page-manager
 ```
 
 Put link for administration sidebar:
 
 ``` bash
-php artisan backpack:add-sidebar-content "<li class='nav-item'><a class='nav-link' href='{{ backpack_url('page') }}'><i class='nav-icon la la-question'></i> {{ __('tjslash::backpack-page-manager.pages') }}</a></li>"
+php artisan backpack:add-sidebar-content "<li class='nav-item'><a class='nav-link' href='{{ backpack_url('page') }}'><i class='nav-icon la la-question'></i> {{ __('tjslash::cto-page-manager.pages') }}</a></li>"
 ```
 
 Put web route for show a pages:
 
 ``` php
-use \Tjslash\BackpackPageManager\Http\Controllers\PageController;
+use \Tjslash\CtoPageManager\Http\Controllers\PageController;
 
 Route::get('{page}', [PageController::class, 'index'])->name('page');
 ```
@@ -59,7 +59,7 @@ mkdir resources/views/page
 touch resources/views/page/about-us.blade.php
 ```
 
-Edit the configuration file (config/backpack-page-manager.php)
+Edit the configuration file (config/cto-page-manager.php)
 
 ``` php
 ...
@@ -74,7 +74,7 @@ Create/edit a page at the administration panel and set template for page.
 
 ## Change log
 
-Changes are documented here on Github. Please see the [Releases tab](https://github.com/tjslash/backpack-page-manager/releases).
+Changes are documented here on Github. Please see the [Releases tab](https://github.com/tjslash/cto-page-manager/releases).
 
 ## Testing
 
@@ -102,10 +102,10 @@ This project was released under MIT, so you can install it on top of any Backpac
 However, please note that you do need Backpack installed, so you need to also abide by its [YUMMY License](https://github.com/Laravel-Backpack/CRUD/blob/master/LICENSE.md). That means in production you'll need a Backpack license code. You can get a free one for non-commercial use (or a paid one for commercial use) on [backpackforlaravel.com](https://backpackforlaravel.com).
 
 
-[ico-version]: https://img.shields.io/packagist/v/tjslash/backpack-page-manager.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/tjslash/backpack-page-manager.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/tjslash/cto-page-manager.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/tjslash/cto-page-manager.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/tjslash/backpack-page-manager
-[link-downloads]: https://packagist.org/packages/tjslash/backpack-page-manager
+[link-packagist]: https://packagist.org/packages/tjslash/cto-page-manager
+[link-downloads]: https://packagist.org/packages/tjslash/cto-page-manager
 [link-author]: https://github.com/tj
 [link-contributors]: ../../contributors

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tjslash\BackpackPageManager;
+namespace Tjslash\CtoPageManager;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -9,6 +9,6 @@ class AddonServiceProvider extends ServiceProvider
     use AutomaticServiceProvider;
 
     protected $vendorName = 'tjslash';
-    protected $packageName = 'backpack-page-manager';
+    protected $packageName = 'cto-page-manager';
     protected $commands = [];
 }

@@ -9,7 +9,7 @@
 | handled by the Tjslash\BackpackPageManager package.
 |
 */
-use \Tjslash\BackpackPageManager\Http\Controllers\Admin\PageCrudController;
+use \Tjslash\CtoPageManager\Http\Controllers\Admin\PageCrudController;
 
 Route::group([
     'prefix' => config('backpack.base.route_prefix', 'admin'),
